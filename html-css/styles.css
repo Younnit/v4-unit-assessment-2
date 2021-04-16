@@ -12,3 +12,110 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    width: 100%;
+}
+
+article{
+    font-size: 18pt;
+    color: rgb(42, 171, 226);
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5.5rem;
+}
+
+p{
+    line-height: 150%;
+}
+
+li{
+    line-height: 150%;
+}
+
+#chunk{
+    width: 50%;
+}
+
+#chunk p{
+    margin: 1rem 0 2rem 0;
+}
+
+#profile{
+    padding: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 10px 5px rgba(102, 75, 75, .3);
+}
+
+#profile h1{
+    text-align: center;
+}
+
+#activities{
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 5px rgba(102, 75, 75, .3);
+}
+
+#activities h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+ol{
+    padding-left: 1rem;
+}
+
+section img{
+    width: 15rem;
+    padding: 1rem;
+}
+
+#profile img{
+    height: 15rem;
+}
+
+footer{
+    background-color: rgb(42, 171, 226);
+    padding: 1rem 0.5rem;
+}
+
+footer article{
+    color: rgb(37, 37, 37);
+    font-size: 14pt;
+}
+
+#blueBtn{
+    background-color: rgb(42, 171, 226);
+    border-radius: 50%;
+    font-size: 20pt;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
