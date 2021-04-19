@@ -87,14 +87,20 @@ const products = [
 */
 
 //CODE HERE
-// let saleProducts = products.map((sale) => {
+// const saleProducts = products.map((element)=>{
+//   const newObj = {
+//     name: element.name,
+//     color: element.color,
+//     price: element.price * 0.75
+//   }
+//   return newObj
 // })
 
-let saleProducts = products.map(sale => {
-  products.price = sale.price - (sale.price * 0.25)
-  return products
-});
-console.log(saleProducts)
+const saleProducts = products.map((element)=> ({
+  ...element,
+  price: element.price * .75,
+
+}))
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -104,7 +110,9 @@ console.log(saleProducts)
 */
 
 //CODE HERE
-// let blueProducts = saleProducts.filter(blueThing => blueThing.color.includes('blue'));
+const blueProducts = saleProducts.filter((element) => {
+  return element.color.includes('blue')
+})
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -113,10 +121,10 @@ console.log(saleProducts)
 */
 
 //CODE HERE
-// let orderTotal = blueProducts.reduce((acc, curr)=>{
-//   acc += curr
-//   return acc
-// },0)
+let orderTotal = blueProducts.reduce((acc, element)=>{
+  acc += element.price
+  return acc
+},0)
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
   For these problems we will be using the objects below, contactInfo and shippingInfo,
